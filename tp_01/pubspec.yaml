@@ -1,0 +1,37 @@
+name: musica
+description: "A new Flutter project."
+
+publish_to: 'none' # Prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+# Removed unused dependencies (path_provider, permission_handler, path) since MusicManager is no longer used
+# If you plan to reintroduce MusicManager or need these later, add them back
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  just_audio: ^0.9.22
+  audio_session: ^0.1.13
+  sqflite: ^2.0.3 # For SQLite
+  path_provider: ^2.0.8 # For SQLite database
+  path: ^1.8.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/108.mp3
+  - assets/113.mp3
+  - assets/114.mp3
+  - assets/image.jpg
+  - assets/image02.jpg
+  - assets/image03.jpg # Ensure this folder exists and contains image.jpg
